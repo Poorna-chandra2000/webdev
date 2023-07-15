@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+color: var(--primary-text-color);
+}
+.small-bold-text{
+     font-size: 1rem;
+     font-weight: 700;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+color: var(--secondary-text-color);
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+.border-button a{
+border: 1px black solid;
+padding: 13px;
+border-radius: 4px;
+font-weight: 600;
+transition: border 0.5s;
+transition: color 0.5s;
+}
+.border-button a:hover{
+    border:1px rgb(237, 111, 223) solid;
+    color: #2294ed;
+}
+.background-button a{
+    background-color: #2294ed;
+    padding: 13px;
+border-radius: 4px;
+font-weight: 600;
+color: rgb(253, 253, 253);
+transition: background-color 0.4s ease;
+transition: color 0.4s ease;
+}
+.background-button a:hover{
+    background-color: var(--accent-color-dark);
+    color: rgb(250, 250, 250);
+}
+.buttton-back{
+    background-color: #2294ed;
+    padding: 13px;
+border-radius: 4px;
+font-weight: 600;
+color: rgb(255, 255, 255);
+transition: background-color 0.2s;
+}
+.buttton-back:hover{
+    background-color: var(--accent-color-dark);
+}
+.border-but{
+    border: 1px var(--secondary-text-color) solid;
+padding: 13px;
+border-radius: 4px;
+font-weight: 600;
+transition: border 0.5s;
+transition: color 0.5s;
+}
+.border-but:hover{
+    border:1px var(--accent-color) solid;
+    color: #2294ed;
+}
+
+/*.............................*/
+.top-banner{
+    background-color: #2294ed;
+    background-image: url(asset\ 32.png) ;
+   background-repeat: repeat;
+   background-size: 300px;
+}
+
+.banner-text{
+    color: aliceblue;
+    padding: 15px 30px;
+    text-align: center;
+}
+.nav-li ul li{
+list-style-type: none;
+}
+ ul{
+    justify-content: space-between;
+    gap: 20px;
+}
+.nav-li ul li a{
+    font-weight: 550;
+    transition: color 0.4s;
+}
+.nav-li ul li a:hover{
+    color: #2294ed;
+}
+
+.nav-main{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.navlogo img{
+    width: 10rem;
+    mix-blend-mode:color-burn;
+}
+.textonimg{
+    position: relative;
+}
+.textonimg p{
+    position: absolute;
+    z-index: 1;
+    left: 12px;
+    top: 5.5px;
+    font-size: 16px;
+    color: black;
+}
+.textonimg img{
+    position: relative;
+    top: 3px;
+    width: 140px;
+}
+.hero-container{
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.para-but{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+    position: relative;
+    margin-right: 20px;
+    text-align: left;
+}
+.para-but h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.3rem;
+}
+.para-but div a{
+    margin-top: 5.9rem;
+    padding-inline: 3rem;
+}
+.busi-img img{
+width: 35rem;
+}
+.com-sec{
+text-align: center;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.com-sec p{
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-block: 20px;
+    color: black;
+}
+.com-logo{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+.com{
+    height: 45px;
+
+}
+.research{
+    flex-direction: column;
+    justify-content: space-between;
+    margin-block: 40px;
+    margin-top: 90px;
+    background-image: url(asset\ 34.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.research h2{
+    top: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.cards{
+    flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: 20px;
+}
+.card{
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 30%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.card img{
+    height: 40px;
+    margin-bottom: 15px;
+}
+.card a{
+    padding-inline: 19px;
+}
+.mar{
+margin-bottom: 30px;
+}
+.platform{
+    background-color: #183b54;
+   
+}
+.plat1{
+    flex-direction: column;
+    text-align: lefts;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 30px;
+}
+.ulist{
+    color:  rgb(185, 205, 228);
+    gap: 30px;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    flex-wrap: wrap;
+}
+.platform1{
+    text-align: left;
+}
+.backimg{
+    background-image: url(asset\ 40.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0;
+    width: 65%;
+    height: 600px;
+    justify-content: center;
+}
+.imgoval{
+position: relative;
+}
+.sentence{
+    position: absolute;
+    text-align: center;
+    color: #183b54;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.para{
+    justify-content: center;
+    color: #577592;
+    font-size: 24px;
+}
+.w1{
+    font-size: 50px;
+    color: #2294ed;
+    padding-top: 7px;
+}
+.b2{
+    color: rgb(185, 205, 228);
+}
+.b2:hover{
+    color: #2294ed;
+}
+.learning{
+    flex-direction: column;
+    gap: 30px;
+    margin-block: 7rem;
+}
+.lh{
+    font-size: 50px;
+}
+.learning div a{
+    padding-inline: 30px;
+    border-radius: 4px;
+}
+.foot{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: rgb(235, 242, 250);
+}
+.foot1{
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+h5{
+    font-weight: 600;
+    color: rgb(24, 59, 86);
+    font-size: 20px;
+    margin-bottom: 17px;
+
+}
+.foot1 div{
+    margin-inline: 40px;
+}
+.foot1 div li{
+    list-style-type: none;
+    line-height: 27px;
+    transition: color 0.3s;
+}
+.foot1 div li:hover{
+    color: #2294ed;
+}
+.navlogo1 img{
+    width: 10rem;
+}
+.foot2{
+    justify-content: center;
+    gap: 50px;
+}
+.terms a{
+    margin-right: 15px;
+}
+.footimg a img{
+justify-content: space-between;
+width: 50%;
+}
+.footimg{
+    gap: 14px;
+}
+.footer{
+    background-color: rgb(185, 205, 228);
+    padding-block: 20px;
+}
+
+
+
+
+
